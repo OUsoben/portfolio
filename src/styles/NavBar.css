@@ -4,11 +4,31 @@
 
 
 .font-name{
-    font-weight: 900;
-    
+    font-weight: 600;
     font-size:25px;
-    font-family: 'Rubik Glitch Pop', system-ui;
+    font-family: "Roboto", sans-serif;
+} 
+
+
+.nav-style{
+    box-shadow: 1px 1px 2px rgba(0,0,0);
 }
-.nav-text {
+.Nav_Link:hover, .Nav_Link:focus{
+    color: rgb(255,0,0);
+}
+.Nav_Link::after{
+    content: ' ';
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+    display: block;
+
+    transition: all 0.2s;
+   pointer-events: none;
+    opacity: 0;
+}
+
+.Nav_Link:hover::after ,.Nav_Link:focus::after{
     
+    opacity: 1;
 }

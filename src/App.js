@@ -8,7 +8,7 @@ import SkillPage from "./pages/SkillPage";
 import ProjectPage from "./pages/ProjectPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
-
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -17,16 +17,15 @@ function App() {
      <BrowserRouter>
       <MyNavbar/>
        <Routes>
-
             <Route path="/" index element={<HomePage/>}/>
             <Route path="/aboutme" element={<AboutPage/>}/>
             <Route path="/skills" element={<SkillPage/>}/>
-            <Route path="/projects" element={<ProjectPage/>}/>
+            <Route path="/portfolio" element={<ProjectPage/>}/>
             <Route path="/contactme" element={<ContactPage/>}/>
             <Route path="*" element={<NotFoundPage/>}/> 
 
        </Routes>
-     
+       <Footer/>
      </BrowserRouter>
     </>
   );

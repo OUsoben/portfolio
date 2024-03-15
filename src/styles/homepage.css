@@ -1,0 +1,227 @@
+
+
+    *{
+        font-family: 'Poppins', sans-serif;
+    }
+
+.slide-top {
+    
+	-webkit-animation: slide-top 0.5s both;
+	        animation: slide-top 0.5s both;
+}
+.slide-down{
+    padding-top: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+.slide-top {
+    padding-top: 100px; 
+    font-size: 20px;
+    padding-left: 30px; 
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+ @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+
+.slide-down {
+	-webkit-animation: slide-down 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse ;
+	        animation: slide-down 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse ;
+}
+
+ @-webkit-keyframes slide-down {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  @keyframes slide-down {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  .dynamic-txts li{
+    list-style: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 50px;
+    font-style: normal;
+    font-family: "Bebas Neue", sans-serif;
+
+  }
+  .dynamic-txts li span{
+    position: relative;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background-color: white;
+    border-left: 2px solid #e40808d6;
+    animation: typing 2S steps(20) infinite;
+  }
+  @keyframes typing {
+    100%{
+        left: 125%;
+        margin: 0 -35px 35px;   
+    }
+  }
+  /* Copy code to element you want to animate */
+  .image-dynamic{
+    animation: customAni 10s linear 0s infinite normal none;
+  }
+
+
+/* Copy this code after the above code */
+@keyframes customAni {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateY(45px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  .css-button-sliding-to-left--yellow {
+    padding: 8px;
+    color: #fff;
+    /* font-weight: bold; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 8px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #050504;
+    color: #040404;
+  }
+  .css-button-sliding-to-left--yellow:hover {
+    color: #fff;
+  }
+  .css-button-sliding-to-left--yellow:hover:after {
+    width: 100%;
+  }
+  .css-button-sliding-to-left--yellow:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #ffd919d3;
+  }
+.container-detail{
+  background-image: url("https://jobify.works/assets/img/img-parallax.a46c79a.jpg");
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size: cover;
+  background-position:center;
+  
+}
+
+
+.bg-section{
+
+    background-color: #f8f6f6;
+}
+.circle {
+  margin-top: 20px;
+  height: 120px;
+  width: 120px;
+  padding: 5px;
+  text-align: center; 
+  border-radius: 50%;
+  display: inline-block;
+  color:#fff;
+  font-size:1.1em;
+  font-weight:600;
+  background-color: rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.2);
+}
+.font-i{
+   font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
