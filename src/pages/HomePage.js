@@ -9,7 +9,7 @@ const Homepage = () => {
         <div className="row ">
           <div className="col-xl-6 pt-5  ">
             <h1 className="slide-down ms-4">
-              <span className="fs-2">Hello__</span>
+              <span className="fs-2">Hello__</span> 
               <br />
               This is Ou soben{" "}
             </h1>
@@ -18,6 +18,7 @@ const Homepage = () => {
                 <span className="text-danger">Frontend Developer</span>{" "}
                 <img src="" alt="" />
               </li>
+              
             </ul>
             <div className="slide-top">
             <p className="">
@@ -28,16 +29,16 @@ const Homepage = () => {
             <a target="_blank" href="https://github.com/OUsoben"><FontAwesomeIcon className="ms-3 icon-platform" icon={faGithub} size="2x" color="black"/></a>
             <div className="mt-5 ">
           
-           <a target="_blank" className=" css-button-sliding-to-left--yellow btn btn-lg px-3" href="https://novoresume.com/editor/resume/271af330-951a-11ee-93a0-8f008a1752d3">Download CV</a>
+           <a target="_blank" className=" css-button-sliding-to-left--yellow btn btn-lg px-3" href="file:///D:/Application/Web-Frontend-Ou-Soben.pdf">Download CV</a>
           
           </div>
             </div>    
            
           </div>
-          <div className=" col-xl-6  image-dynamic mt-2">
+          <div className=" col-xl-6  image-dynamic mt-5">
             <img
               className="img-fluid "
-              src="https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-4296.jpg?w=826&t=st=1710222660~exp=1710223260~hmac=8189a5cf3a253c4bd9076b5eb25d1ab96836ef850ca47bd96392b74ba203d958"
+              src={require("../images/logo-image.png")}
               alt=""
             />
           </div>
@@ -67,8 +68,8 @@ const Homepage = () => {
              <h5 className="text-white pt-2 ms-2">70%</h5>
              <p className="text-white ">Javscript</p>
              </div>
-        
-             <div className="">
+           
+             <div className="123">
              <FontAwesomeIcon icon={faReact} size="3x" color="#61DBFB"/>
              <h5 className="text-white pt-2 ps-1">70%</h5>
              <p className="text-white">React Js</p>
@@ -90,7 +91,7 @@ const Homepage = () => {
                </div>
                <div className="col-xl-8 p-xl-5 ms-2">
           
-                <p className="font-i">I'm almost 21 years old based in Phnom Penh city, and Currently a third-year student pursuing a Bachelor's Degree in Computer Science at <strong>Royal University of Phnom Penh.</strong> ,and passion for Design and Web Development. <br /> <br /> With a foundation rooted in a love for web development, I have honed my skills in HTML, CSS, JavaScript, and React Js to create dynamic and responsive interfaces that seamlessly blend form with function.</p>
+                <p className="font-i">I'm 21 years old based in Phnom Penh city, a senior college student pursuing a degree in Computer Science at <strong>Royal University of Phnom Penh.</strong> ,and passion for Design and Web Development. <br /> <br /> With a foundation rooted in a love for web development, I have honed my skills in HTML, CSS, JavaScript, and React Js to create dynamic and responsive interfaces that seamlessly blend form with function.</p>
                </div>
 
           </div>

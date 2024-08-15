@@ -1,5 +1,6 @@
 *{
     font-family: 'Poppins', sans-serif;
+
 }
 
 
@@ -31,4 +32,17 @@
 .Nav_Link:hover::after ,.Nav_Link:focus::after{
     
     opacity: 1;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler-icon{
+    font-size: small;
+    font-weight: bold;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
